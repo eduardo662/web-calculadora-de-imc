@@ -9,11 +9,11 @@ Totalmente responsiva (funciona bem no celular e no desktop)
 Exibe o valor do IMC e a classificação correspondente
 
 📌 Tecnologias utilizadas
-HTML5
 
-CSS3 (com Flexbox e Media Queries)
-
-Git para versionamento do projeto
+-HTML5
+-CSS3 (com Flexbox e Media Queries)
+-Git para versionamento do projeto
+-JavaScript para a logica da calculadora de IMC
 
 📷 Prévia
 
