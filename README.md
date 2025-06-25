@@ -17,5 +17,7 @@ Exibe o valor do IMC e a classificação correspondente
 
 📷 Prévia
 
+![Preview do projeto](screenshot.png)
+
 🔗 Acesse aqui
 Ver página no GitHub Pages:
