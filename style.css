@@ -2,6 +2,12 @@
     margin: 0;
 }
 
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Configurações gerais */
 
 body::before {
@@ -14,7 +20,7 @@ body::before {
     background-image: url(/img/texture.png);
     background-size: cover;
     background-position: center;
-    opacity: 0.06;
+    opacity: 0.12;
     z-index: -1;
 }
 
@@ -35,7 +41,17 @@ p {
 /* Fim Configurações gerais */
 
 
+.background-conteudo{
+    background-color: rgb(255, 255, 255);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    min-height: 100vh;
+    overflow: hidden;
+    box-shadow:
+    -10px 0 20px rgba(0, 0, 0, 0.2),  /* sombra esquerda */
+     10px 0 20px rgba(0, 0, 0, 0.2);  /* sombra direita */
 
+}
 
 /* Inicio menu */
 
@@ -100,11 +116,12 @@ p {
 /* Conteudo principal */
 
 .inicio{
+    margin-top: 5vh;
     display: flex;
 }
 
 .textos-inicio{
-        max-width: 600px;
+        max-width: 50vw;
         margin: 0 auto;
         padding: 1rem;
         line-height: 1.6;
@@ -116,17 +133,108 @@ p {
 }
 
 .video{
-    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
-    margin-right: 30vh;
-    margin-left: 5vw;
+}
+
+.area-calc{
+    display: flex;
+    height: 450px;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.caixa-calc{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #4faffd, #30d6ff);
+    padding: 5vh;
+    height: 30vh;
+    border-radius: 15px;
+    gap: 10px;
+    box-shadow:
+    -10px 0 20px rgba(0, 0, 0, 0.2),  /* sombra esquerda */
+     10px 0 20px rgba(0, 0, 0, 0.2);  /* sombra direita */
+    
 }
 
 /* Fim Conteudo principal */
 
-/* Responsividade */
 
-@media screen and (max-width:720px) {
+
+
+/* Calculadora estilo */
+
+#titulo-calc-id{
+    color: white;
+}
+
+label{
+    color: white; 
+}
+
+.input1{
+    border-style: none; 
+    border-radius: 15px;
+    height: 5vh;
+}
+
+.input2{
+    border-style: none;
+    border-radius: 15px;
+    height: 5vh;
+}
+
+.btn-calc{
+    border-style: none;
+    border-radius: 15px;
+    height: 5vh;
+}
+
+.btn-calc:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* Fim Calculadora estilo */
+
+.cont-texto{
+        max-width: 50vw;
+        margin: 0 auto;
+        padding: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+}
+
+.footer{
+    display: flex;
+    height: 15vh;
+    background-color: #30d6ff;
+    justify-content: center;
+    align-items: center;
+}
+
+.dentro-do-footer{
+    color: white;
+}
+
+.caixa-cont-texto{
+    margin-bottom: 5vh;
+}
+
+
+/* Responsividade Mobile */
+
+@media screen and (max-width:768px) {
+
+    /* Links do menu e logo */
     #nutriçao{
         display: none;
     }
@@ -152,6 +260,8 @@ p {
 
     }
 
+    /* Fim Links do menu e logo */
+
     .inicio{
         flex-direction: column;
         justify-content: center;
@@ -173,8 +283,7 @@ p {
     .video{
         width: 100%;
         max-width: 260px;
-        margin: 0 auto;
-        padding: 1rem;
+        margin-top: 2vh;
     }
 
     .video iframe{
@@ -183,6 +292,62 @@ p {
         aspect-ratio: 16 / 9;
         
     }
+    .caixa-cont-texto{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .cont-texto{
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .background-conteudo{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .caixa-calc{
+        padding: 10vw;
+    }
+
+    label{
+        color: white;
+    }
+
+    .input1{
+        border-style: none;
+    }
+
+    .input2{
+        border-style: none;
+    }
+
+    .area-calc{
+        margin-bottom: 45vh;
+    }
+    
+    .dentro-do-footer{
+        margin: 35px;
+    }
 }
 
-/* Fim Responsividade */
+/* Fim Responsividade mobile */
+
+@media (max-width:1460px) and (min-width:768px) {
+
+    .area-calc{
+        margin-top: 3vw;
+    }
+
+    .caixa-cont-texto{
+        margin-top: 38vh;
+    }
+  
+}
