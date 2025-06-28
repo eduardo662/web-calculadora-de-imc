@@ -4,58 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Saúde Essencial</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Cabeçalho do site -->
+    <!-- Cabeçalho -->
     <header class="menu">
         <nav class="menu-nav">
             <div class="logo-div">
-                <a href="index.html"><img class="logo" src="assets/img/logo.png" alt=""></a>
+                <a href="index.html"><img class="logo" src="assets/img/logo.png" alt="Logo"></a>
             </div>
             <ul class="links">
-                <a href="index.html">
-                    <li id="inicio">INICIO</li>
-                </a>
-                <a href="assets/pages/calc-imc.html">
-                    <li id="calc-imc-link">CALCULADORA IMC</li>
-                </a>
-                <a href="assets/pages/sobre.html"><li id="sobre">SOBRE</li></a> 
+                <a href="index.html"><li id="inicio">INÍCIO</li></a>
+                <a href="assets/pages/calc-imc.html"><li id="calc-imc-link">CALCULADORA IMC</li></a>
+                <a href="assets/pages/sobre.html"><li id="sobre">SOBRE</li></a>
             </ul>
         </nav>
     </header>
-    <!-- Fim do Cabeçalho do site -->
 
-    <!-- Inicio Conteudos paginas inicial -->
-
+    <!-- Conteúdo principal -->
     <div class="h1-1">
-        <h1>Seja bem-vindo ao Saúde Essencial </h1>
+        <h1>Seja bem-vindo ao Saúde Essencial</h1>
     </div>
 
     <main class="container">
-        <div class="post">
-            <a href="assets/pages/calc-imc.html"><img id="img-1" src="assets/img/calc-imc-img.png" alt="Imagem 1"></a>
+        <a href="assets/pages/calc-imc.html" class="post">
+            <img id="img-1" src="assets/img/calc-imc-img.png" alt="Imagem 1">
             <h2>Calculadora IMC</h2>
             <p>Resumo da primeira postagem do blog. Aqui vai um pequeno parágrafo explicando sobre o conteúdo.</p>
-        </div>
+        </a>
 
-        <div class="post">
-            <a href="assets/pages/habitos.html"><img src="assets/img/habitos-atomicos-capa.jpg" alt="Imagem 2"></a> 
-            <h2>hábitos simples para melhorar sua saúde</h2>
+        <a href="assets/pages/habitos.html" class="post">
+            <img src="assets/img/habitos-atomicos-capa.jpg" alt="Imagem 2">
+            <h2>Hábitos simples para melhorar sua saúde</h2>
             <p>Resumo da segunda postagem do blog. Um trecho interessante que chama atenção do leitor.</p>
-        </div>
-
+        </a>
     </main>
 
-    <!-- Fim conteudos pagina inicial -->
-
+    <!-- Rodapé -->
     <footer class="footer">
         <div class="dentro-do-footer">
             <p>© 2025 Eduardo Cunha. Todos os direitos reservados.
@@ -63,17 +53,12 @@
         </div>
     </footer>
 
-
-    <!-- Script para voltar a pagina para o começo ao aperta f5 -->
+    <!-- Voltar ao topo ao atualizar -->
     <script>
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         };
     </script>
-
-    <!-- Script para voltar a pagina para o começo ao aperta f5 -->
-
-    <!-- -->
 </body>
 
 </html>
