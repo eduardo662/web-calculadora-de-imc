@@ -8,6 +8,12 @@ html, body{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
 /* Configurações gerais */
 
 body::before {
@@ -17,7 +23,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/img/texture.png);
+    background-image: url(/assets/img/texture.png);
     background-size: cover;
     background-position: center;
     opacity: 0.12;
@@ -56,6 +62,7 @@ p {
 /* Inicio menu */
 
 .menu{
+    z-index: 1;
     position: fixed;
     width: 100%;
 }
@@ -88,11 +95,11 @@ p {
     justify-content: space-evenly;
 }
 
-#nutriçao:hover{
+#inicio:hover{
     color: aqua;
 }
 
-#fitness:hover{
+#calc-imc-link:hover{
     color: aqua;
 }
 
@@ -219,6 +226,7 @@ label{
     background-color: #30d6ff;
     justify-content: center;
     align-items: center;
+    margin-top: 7vh;
 }
 
 .dentro-do-footer{
@@ -228,6 +236,58 @@ label{
 .caixa-cont-texto{
     margin-bottom: 5vh;
 }
+
+/* Pagina Inicial Grid */
+
+.container {
+  width: fit-content;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 3vh;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+}
+
+.post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: scale(1.02);
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#img-1{
+    width: 50%;
+}
+
+.h1-1{
+    padding-left: 1vh;
+    padding-right: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+/* Fim Pagina Inicial Grid */
 
 
 /* Responsividade Mobile */
@@ -261,6 +321,17 @@ label{
     }
 
     /* Fim Links do menu e logo */
+
+    #container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 500px 500px 500px;
+    justify-content: center;
+    }
+
+    #calc-imc-link{
+        display: none;
+    }
 
     .inicio{
         flex-direction: column;
@@ -336,6 +407,21 @@ label{
     .dentro-do-footer{
         margin: 35px;
     }
+
+    .h1-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vh;
+    text-align: center;
+}
+}
+
+.img-habitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
 }
 
 /* Fim Responsividade mobile */
@@ -349,5 +435,8 @@ label{
     .caixa-cont-texto{
         margin-top: 38vh;
     }
+
+
+
   
 }

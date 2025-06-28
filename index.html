@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,87 +18,43 @@
     <header class="menu">
         <nav class="menu-nav">
             <div class="logo-div">
-                <a href="index.html"><img class="logo" src="/img/logo.png" alt=""></a>
+                <a href="index.html"><img class="logo" src="/assets/img/logo.png" alt=""></a>
             </div>
             <ul class="links">
-                <li id="nutriçao">NUTRIÇÃO</li>
-                <li id="fitness">FITNESS</li>
-                <li id="bem-estar">BEM ESTAR</li>
-                <li id="saude-mental">SAÚDE MENTAL</li>
-                <li id="sobre">SOBRE</li>
+                <a href="index.html">
+                    <li id="inicio">INICIO</li>
+                </a>
+                <a href="/assets/pages/calc-imc.html">
+                    <li id="calc-imc-link">CALCULADORA IMC</li>
+                </a>
+                <a href="/assets/pages/sobre.html"><li id="sobre">SOBRE</li></a> 
             </ul>
         </nav>
     </header>
     <!-- Fim do Cabeçalho do site -->
 
+    <!-- Inicio Conteudos paginas inicial -->
 
-    <!-- Inicio caixa branca atrás do conteudo da pagina -->
-
-    <div class="background-conteudo">
-
-
-
-        <!-- Conteudo inicial do site -->
-        <main class="inicio">
-            <div class="textos-inicio">
-                <h1 class="titulo">Calculadora de IMC (e peso ideal)</h1>
-                <p class="texto">O Índice de Massa Corporal (IMC) é uma medida utilizada para avaliar se uma pessoa está
-                    dentro do peso ideal em relação à sua altura. Ele é calculado dividindo o peso (em quilos) pela
-                    altura
-                    ao quadrado (em metros). O resultado é comparado com faixas de referência que indicam se o indivíduo
-                    está abaixo do peso, com peso normal, sobrepeso ou obesidade. Embora seja uma ferramenta prática e
-                    amplamente utilizada, o IMC não leva em consideração fatores como composição corporal, idade ou
-                    distribuição de gordura, por isso deve ser analisado junto com outras avaliações de saúde.</p>
-            </div>
-
-        </main>
-        <!-- Fim do Conteudo inicial do site -->
-
-        <!-- Calculadora e video -->
-
-        <div class="area-calc">
-            <div class="caixa-calc">
-                <h2 id="titulo-calc-id">Calculadora de imc</h2>
-                <label for="input1">Altura(M)</label>
-                <input id="altura" class="input1" type="text">
-                <label for="input2">Peso()</label>
-                <input id="peso" class="input2" type="text">
-                <button onclick="calcIMC()" class="btn-calc">Calcule agora</button>
-                <span id="resultado"></span>
-            </div>
-
-
-
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/e5OuLSDayxs?si=Xp9omxH5UgZ_Yy-I"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <!-- Fim Calculadora e video -->
-
-
-        <div class="caixa-cont-texto">
-            <p class="cont-texto">Entretanto, é fundamental destacar que o IMC é uma medida simplificada e não considera
-                aspectos como a
-                composição corporal, distribuição da gordura, idade, sexo ou nível de atividade física. Por isso, deve
-                ser utilizado como um indicativo inicial e sempre acompanhado de outras avaliações clínicas para um
-                diagnóstico mais preciso.
-
-                Além do IMC, a calculadora também pode ajudar a estimar o peso ideal, que varia conforme diferentes
-                metodologias e características individuais. Manter um peso adequado contribui para a melhoria da
-                qualidade de vida, reduzindo riscos de doenças cardiovasculares, diabetes, hipertensão e outras
-                condições associadas ao excesso ou à falta de peso.
-
-                Use esta ferramenta com responsabilidade e, para orientações personalizadas, consulte um profissional de
-                saúde.</p>
-        </div>
-
+    <div class="h1-1">
+        <h1>Seja bem-vindo ao Saúde Essencial </h1>
     </div>
 
-    <!-- Fim caixa branca atrás do conteudo da pagina -->
+    <main class="container">
+        <div class="post">
+            <a href="/assets/pages/calc-imc.html"><img id="img-1" src="/assets/img/calc-imc-img.png" alt="Imagem 1"></a>
+            <h2>Calculadora IMC</h2>
+            <p>Resumo da primeira postagem do blog. Aqui vai um pequeno parágrafo explicando sobre o conteúdo.</p>
+        </div>
+
+        <div class="post">
+            <a href="/assets/pages/habitos.html"><img src="/assets/img/habitos-atomicos-capa.jpg" alt="Imagem 2"></a> 
+            <h2>hábitos simples para melhorar sua saúde</h2>
+            <p>Resumo da segunda postagem do blog. Um trecho interessante que chama atenção do leitor.</p>
+        </div>
+
+    </main>
+
+    <!-- Fim conteudos pagina inicial -->
 
     <footer class="footer">
         <div class="dentro-do-footer">
@@ -108,12 +64,15 @@
     </footer>
 
 
+    <!-- Script para voltar a pagina para o começo ao aperta f5 -->
     <script src="script.js"></script>
     <script>
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         };
     </script>
+
+    <!-- Script para voltar a pagina para o começo ao aperta f5 -->
 </body>
 
 </html>
