@@ -221,12 +221,16 @@ label{
 }
 
 .footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
     display: flex;
     height: 15vh;
     background-color: #30d6ff;
     justify-content: center;
     align-items: center;
-    margin-top: 7vh;
+    margin-top: 32vh;
+    
 }
 
 .dentro-do-footer{

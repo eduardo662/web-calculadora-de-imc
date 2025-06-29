@@ -49,8 +49,9 @@ p {
 
 .background-conteudo{
     background-color: rgb(255, 255, 255);
-    margin-left: 15vw;
-    margin-right: 15vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
     min-height: 100vh;
     overflow: hidden;
     box-shadow:
@@ -226,7 +227,6 @@ label{
     background-color: #30d6ff;
     justify-content: center;
     align-items: center;
-    margin-top: 7vh;
 }
 
 .dentro-do-footer{
@@ -421,7 +421,6 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 15px;
 }
 
 /* Fim Responsividade mobile */
